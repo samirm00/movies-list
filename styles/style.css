@@ -58,8 +58,8 @@ input[type='text'] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 224px;
-    height: 400px;
+    width: 250px;
+    height: 500px;
     background-color: aliceblue;
 }
 
@@ -74,6 +74,10 @@ input[type='text'] {
     margin-top: 3px;
     font-size: 16px;
     text-transform: uppercase;
+}
+.image-box h5 {
+    font-weight: bolder;
+    font-size: 17px;
 }
 
 .btn-container {

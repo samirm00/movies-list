@@ -8,8 +8,14 @@ const addMovieHandler = async (e) => {
 
     const newMovie = {
         title: dom.titleInput.value,
-        src: dom.sourceInput.value
+        src: dom.sourceInput.value,
+        year: dom.year.value
     };
+
+    // make sure year exist
+    if (!newMovie.year) {
+        newMovie.year = '2023';
+    }
 
     // Check if title and source exist
     if (!newMovie.title || !newMovie.src) {
@@ -30,14 +36,17 @@ const addMovieHandler = async (e) => {
         movieDom.querySelector('img').src = newMovie.src;
         movieDom.querySelector('img').alt = newMovie.title;
         movieDom.querySelector('h6').innerText = newMovie.title;
+        movieDom.querySelector('h5').innerText = newMovie.year;
         const id = Number(movieDom.id);
         await updateMovie(id, newMovie);
         movieDom.classList.remove('selected');
         dom.btn.innerText = 'Add Movie';
     }
 
+    // reset inputs
     dom.titleInput.value = '';
     dom.sourceInput.value = '';
+    dom.year.value = '';
 };
 
 export default addMovieHandler;

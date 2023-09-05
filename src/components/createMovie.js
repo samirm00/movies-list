@@ -17,6 +17,10 @@ const createMovie = (movieData) => {
     const title = document.createElement('h6');
     title.innerText = movieData.title;
 
+    // create year
+    const year = document.createElement('h5');
+    year.innerText = movieData.year;
+
     // delete button
     const deleteButton = document.createElement('button');
     deleteButton.innerText = 'Delete';
@@ -40,7 +44,7 @@ const createMovie = (movieData) => {
 
     btnContainer.append(deleteButton, editButton);
 
-    container.append(img, title, btnContainer);
+    container.append(img, title, year, btnContainer);
 
     return container;
 };
