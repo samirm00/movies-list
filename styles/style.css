@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&family=Lobster&display=swap');
+
 *,
 *::before,
 *::after {
@@ -8,8 +10,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: rgb(81, 78, 78);
+}
+
 .container {
-    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type='text'] {
@@ -17,17 +26,24 @@ input[type='text'] {
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 25%;
+    font-size: 14px;
 }
 
 #btn {
     padding: 10px 20px;
+    margin: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14px;
 }
 
+#btn:hover {
+    background-color: #1677de;
+}
 .movies {
     display: flex;
     flex-wrap: wrap;
@@ -41,22 +57,34 @@ input[type='text'] {
     margin: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 224px;
     height: 400px;
+    background-color: aliceblue;
 }
 
 .image-box img {
-    max-width: 100%;
-    max-height: 100%;
+    display: block;
+    height: 78%;
+    width: 100%;
 }
 
 .image-box h6 {
+    font-family: 'Changa', sans-serif;
+    margin-top: 3px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
 .btn-container {
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-container button {
+    width: 45%;
 }
 
 .btn-container .deleteBtn,
@@ -71,7 +99,7 @@ input[type='text'] {
 }
 
 .btn-container .editBtn {
-    background-color: #0e3bb8;
+    background-color: #0eb82a;
 }
 
 .error.err {
@@ -86,4 +114,32 @@ input[type='text'] {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 950px) {
+    .container {
+        flex-direction: column;
+    }
+
+    input[type='text'] {
+        width: 80%;
+    }
+
+    #btn {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    input[type='text'] {
+        width: 90%;
+    }
+
+    #btn {
+        width: 90%;
+    }
 }
