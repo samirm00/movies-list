@@ -37,6 +37,9 @@ const createMovie = (movieData) => {
     editButton.addEventListener('click', () => {
         dom.btn.innerText = 'Edit Movie';
         container.classList.add('selected');
+        dom.titleInput.value = movieData.title;
+        dom.sourceInput.value = movieData.src;
+        dom.year.value = movieData.year;
     });
 
     const btnContainer = document.createElement('div');
