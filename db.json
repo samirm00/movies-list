@@ -4,85 +4,31 @@
       "title": "Raised By wolves",
       "src": "https://m.media-amazon.com/images/M/MV5BNTRlMTg4NWYtZmRiNS00YWE0LWFkZTMtNjk5Yzc3NGE0ZTE0XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg",
       "year": "2014",
-      "id": 2
+      "id": 1
     },
     {
       "title": "joker",
       "src": "./assets/joker.jpg",
       "year": "2010",
-      "id": 3
+      "id": 2
     },
     {
       "title": "passenger",
       "src": "./assets/passenger.jpg",
       "year": "2017",
-      "id": 4
+      "id": 3
     },
     {
       "title": "shooter",
       "src": "./assets/shooter.jpeg",
       "year": "2020",
-      "id": 5
+      "id": 4
     },
     {
       "title": "Agnee path",
       "src": "https://upload.wikimedia.org/wikipedia/en/0/08/Agneepath_poster.jpg",
       "year": "2010",
-      "id": 8
-    },
-    {
-      "title": "arrival",
-      "src": "https://img-9gag-fun.9cache.com/photo/aB0xvPA_460s.jpg",
-      "year": "2011",
-      "id": 11
-    },
-    {
-      "title": "Batman",
-      "src": "https://cdn.britannica.com/49/127649-050-31417AF3/Heath-Ledger-Joker-Christian-Bale-The-Dark-Knight-2008.jpg",
-      "year": "2004",
-      "id": 12
-    },
-    {
-      "title": "shawshank",
-      "src": "https://static.javatpoint.com/best/images/best-hollywood-movies1.jpg",
-      "year": "2009",
-      "id": 14
-    },
-    {
-      "title": "ip man",
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD0M-F9yAGI0vPJzW0lkzIHeXEjUOOT4HaPH0Vw2iiqwKBrZYbZ7e4eydt_yU7GmrXeeY&usqp=CAU",
-      "year": "2004",
-      "id": 15
-    },
-    {
-      "title": "galdiator",
-      "src": "https://i.pinimg.com/originals/fe/95/f0/fe95f0a3537c99b1f399d9366c339809.jpg",
-      "year": "2014",
-      "id": 17
-    },
-    {
-      "title": "wolverine",
-      "src": "https://upload.wikimedia.org/wikipedia/en/7/74/The_Wolverine_posterUS.jpg",
-      "year": "2014",
-      "id": 20
-    },
-    {
-      "title": "nice guy",
-      "src": "https://x8r7c6g3.rocketcdn.me/wp-content/uploads/2015/05/nice-guy-001.jpg",
-      "year": "2014",
-      "id": 21
-    },
-    {
-      "title": "commitment ",
-      "src": "https://asianwiki.com/images/c/cc/Commitment_-_Korean_Movie-p1.jpg",
-      "year": "2014",
-      "id": 22
-    },
-    {
-      "title": "DESCENDANTS OF THE SUN",
-      "src": "https://i.pinimg.com/564x/32/38/8d/32388ded296a82122ba720346d10436d--boss-the-sun.jpg",
-      "year": "2014",
-      "id": 23
+      "id": 5
     }
   ]
 }
