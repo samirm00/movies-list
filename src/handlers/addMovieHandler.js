@@ -28,6 +28,7 @@ const addMovieHandler = async (e) => {
     } else {
         const movieDom = document.querySelector('.selected');
         movieDom.querySelector('img').src = newMovie.src;
+        movieDom.querySelector('img').alt = newMovie.title;
         movieDom.querySelector('h6').innerText = newMovie.title;
         const id = Number(movieDom.id);
         await updateMovie(id, newMovie);
