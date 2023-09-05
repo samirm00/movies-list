@@ -1,8 +1,8 @@
 import data from '../src/data.js';
 
-const getMovies = async () => {
+const getMovieById = async (id) => {
     try {
-        const res = await fetch(data.baseUrl);
+        const res = await fetch(`${data.baseUrl}/${id}`);
         if (!res.ok) {
             throw new Error(
                 `Failed to fetch movies with status : ${res.status}`
@@ -15,4 +15,4 @@ const getMovies = async () => {
     }
 };
 
-export default getMovies;
+export default getMovieById;

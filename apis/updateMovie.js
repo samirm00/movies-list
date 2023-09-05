@@ -1,8 +1,14 @@
 import data from '../src/data.js';
 
-const getMovies = async () => {
+const updateMovie = async (id, newMovie) => {
     try {
-        const res = await fetch(data.baseUrl);
+        const res = await fetch(`${data.baseUrl}/${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(newMovie)
+        });
         if (!res.ok) {
             throw new Error(
                 `Failed to fetch movies with status : ${res.status}`
@@ -15,4 +21,4 @@ const getMovies = async () => {
     }
 };
 
-export default getMovies;
+export default updateMovie;
