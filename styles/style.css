@@ -32,6 +32,7 @@ input[type='text'] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 56px;
 }
 
 .image-box {
@@ -71,4 +72,18 @@ input[type='text'] {
 
 .btn-container .editBtn {
     background-color: #0e3bb8;
+}
+
+.error.err {
+    display: inline-block;
+    background-color: #dc3545;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-left: auto;
+    margin: 10px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }

@@ -11,18 +11,28 @@ const addMovieHandler = async (e) => {
         src: dom.sourceInput.value
     };
 
+    // Check if title and source exist
+    if (!newMovie.title || !newMovie.src) {
+        dom.error.innerText = 'Please add both movie title and source';
+        dom.error.classList.add('err');
+        return;
+    }
+
+    // remove error message if exist
+    dom.error.innerText = '';
+    dom.error.classList.remove('err');
     if (dom.btn.innerText === 'Add movie') {
         const movieDom = createMovie(newMovie);
         dom.movies.prepend(movieDom);
         const movieAdd = await addMovie(newMovie);
     } else {
-        dom.btn.innerText = 'Add Movie';
         const movieDom = document.querySelector('.selected');
         movieDom.querySelector('img').src = newMovie.src;
         movieDom.querySelector('h6').innerText = newMovie.title;
         const id = Number(movieDom.id);
         await updateMovie(id, newMovie);
         movieDom.classList.remove('selected');
+        dom.btn.innerText = 'Add Movie';
     }
 
     dom.titleInput.value = '';
