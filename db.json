@@ -1,1 +1,25 @@
 
+{
+    "movies": [
+      {
+        "id": 1,
+        "title": "Brave Heart",
+        "src": "./assets/braveHeart.jpeg"
+      },
+      {
+        "title": "Iron man",
+        "src": "./assets/ironman.jpg",
+        "id": 2
+      },
+      {
+        "title": "space",
+        "src": "./assets/space.jpg",
+        "id": 3
+      },
+      {
+        "title": "space",
+        "src": "./assets/space.jpg",
+        "id": 4
+      }
+    ]
+  }
