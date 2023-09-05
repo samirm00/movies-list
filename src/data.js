@@ -1,4 +1,4 @@
 const data = {
-    baseUrl: 'https://my-json-server.typicode.com/samirm00/movies-list/movies'
+    baseUrl: 'http://localhost:5000/movies'
 };
 export default data;

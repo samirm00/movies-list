@@ -1,25 +1,39 @@
-
 {
-    "movies": [
-      {
-        "id": 1,
-        "title": "Brave Heart",
-        "src": "./assets/braveHeart.jpeg"
-      },
-      {
-        "title": "Iron man",
-        "src": "./assets/ironman.jpg",
-        "id": 2
-      },
-      {
-        "title": "space",
-        "src": "./assets/space.jpg",
-        "id": 3
-      },
-      {
-        "title": "space",
-        "src": "./assets/space.jpg",
-        "id": 4
-      }
-    ]
-  }
+  "movies": [
+    {
+      "id": 1,
+      "title": "Brave Heart",
+      "src": "./assets/braveHeart.jpeg"
+    },
+    {
+      "title": "Raised By wolves",
+      "src": "https://m.media-amazon.com/images/M/MV5BNTRlMTg4NWYtZmRiNS00YWE0LWFkZTMtNjk5Yzc3NGE0ZTE0XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg",
+      "id": 2
+    },
+    {
+      "title": "joker",
+      "src": "./assets/joker.jpg",
+      "id": 3
+    },
+    {
+      "title": "passenger",
+      "src": "./assets/passenger.jpg",
+      "id": 4
+    },
+    {
+      "title": "shooter",
+      "src": "./assets/shooter.jpeg",
+      "id": 5
+    },
+    {
+      "title": "space",
+      "src": "./assets/space.jpg",
+      "id": 6
+    },
+    {
+      "title": "universe",
+      "src": "./assets/universe.jpg",
+      "id": 7
+    }
+  ]
+}

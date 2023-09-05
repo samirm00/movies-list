@@ -24,6 +24,9 @@ const addMovieHandler = async (e) => {
         await updateMovie(id, newMovie);
         movieDom.classList.remove('selected');
     }
+
+    dom.titleInput.value = '';
+    dom.sourceInput.value = '';
 };
 
 export default addMovieHandler;
