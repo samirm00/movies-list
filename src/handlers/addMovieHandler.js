@@ -2,6 +2,7 @@ import dom from '../dom.js';
 import addMovie from '../../apis/addMovie.js';
 import updateMovie from '../../apis/updateMovie.js';
 import createMovie from '../components/createMovie.js';
+import updateMovieDom from '../components/updateMovieDom.js';
 
 const addMovieHandler = async (e) => {
     e.preventDefault();
@@ -33,10 +34,7 @@ const addMovieHandler = async (e) => {
         const movieAdd = await addMovie(newMovie);
     } else {
         const movieDom = document.querySelector('.selected');
-        movieDom.querySelector('img').src = newMovie.src;
-        movieDom.querySelector('img').alt = newMovie.title;
-        movieDom.querySelector('h6').innerText = newMovie.title;
-        movieDom.querySelector('h5').innerText = newMovie.year;
+        updateMovieDom(movieDom, newMovie);
         const id = Number(movieDom.id);
         await updateMovie(id, newMovie);
         movieDom.classList.remove('selected');
