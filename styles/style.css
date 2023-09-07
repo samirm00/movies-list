@@ -119,13 +119,21 @@ input[type='text'] {
     left: 50%;
     transform: translateX(-50%);
 }
-
 .loader {
     animation: rotate 1s infinite;
     height: 50px;
     width: 50px;
 }
 
+<<<<<<< Updated upstream
+.loader {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+}
+
+=======
+>>>>>>> Stashed changes
 .loader:before,
 .loader:after {
     border-radius: 50%;
@@ -192,8 +200,6 @@ input[type='text'] {
         margin-top: 0;
     }
 }
-
-
 @media (max-width: 950px) {
     .container {
         flex-direction: column;

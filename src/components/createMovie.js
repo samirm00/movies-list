@@ -32,10 +32,14 @@ const createMovie = (movieData) => {
 
     // edit button
     const editButton = document.createElement('button');
-    editButton.innerText = 'Edit';
     editButton.className = 'editBtn';
+    editButton.innerText = 'Edit';
     editButton.addEventListener('click', () => {
         dom.btn.innerText = 'Edit Movie';
+        dom.titleInput.value = movieData.title;
+        dom.sourceInput.value = movieData.src;
+        dom.year.value = movieData.year;
+
         container.classList.add('selected');
         dom.titleInput.value = movieData.title;
         dom.sourceInput.value = movieData.src;

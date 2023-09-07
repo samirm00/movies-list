@@ -3,11 +3,13 @@ import addMovie from '../../apis/addMovie.js';
 import updateMovie from '../../apis/updateMovie.js';
 import createMovie from '../components/createMovie.js';
 import updateMovieDom from '../components/updateMovieDom.js';
+import data from '../data.js';
 
 const addMovieHandler = async (e) => {
     e.preventDefault();
 
     const newMovie = {
+        id: data.id++,
         title: dom.titleInput.value,
         src: dom.sourceInput.value,
         year: dom.year.value
@@ -28,10 +30,11 @@ const addMovieHandler = async (e) => {
     // remove error message if exist
     dom.error.innerText = '';
     dom.error.classList.remove('err');
+
     if (dom.btn.innerText === 'Add movie') {
         const movieDom = createMovie(newMovie);
         dom.movies.prepend(movieDom);
-        const movieAdd = await addMovie(newMovie);
+        await addMovie(newMovie);
     } else {
         const movieDom = document.querySelector('.selected');
         updateMovieDom(movieDom, newMovie);

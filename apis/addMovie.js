@@ -10,9 +10,11 @@ const addMovie = async (newMovie) => {
             body: JSON.stringify(newMovie)
         });
         if (!res.ok) {
-            throw new Error(
-                `Failed to fetch movies with status : ${res.status}`
+            const error = new Error(
+                `Failed to fetch movies with status: ${res.status}`
             );
+            error.status = res.status;
+            throw error;
         }
         return await res.json();
     } catch (err) {

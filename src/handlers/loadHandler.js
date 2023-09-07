@@ -1,11 +1,12 @@
 import dom from '../dom.js';
 import getMovies from '../../apis/getMovies.js';
 import createMovie from '../components/createMovie.js';
+import createLoading from '../components/createLoading.js';
 import sortMovies from '../utils/sortMovies.js';
 import createLoader from '../components/createLoader.js'
 
 const loadHandler = async () => {
-    const loaderDom = createLoader();
+    const loaderDom = createLoading();
     dom.movies.append(loaderDom);
     const movies = await getMovies();
     if (movies) {
